@@ -38,6 +38,9 @@ class _BallState extends State<Ball> {
   Widget build(BuildContext context) {
     return Center(
       child: FlatButton(
+        //Stops image flashing
+        splashColor: Colors.transparent,
+        highlightColor: Colors.transparent,
         onPressed: () {
           changeAnswer();
         },
